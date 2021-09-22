@@ -1,0 +1,46 @@
+{
+  "name": "@magister_zito/stylelint-config",
+  "version": "0.0.1",
+  "description": "stylelint for developers with actual ocd",
+  "keywords": [
+    "stylelint",
+    "stylelint-config"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatthewZito/stylelint-config.git"
+  },
+  "author": "Matthew Zito (goldmund) <matthewtzito@gmail.com>",
+  "files": [
+    "index.js",
+    "stylelint.config.js"
+  ],
+  "main": "index.js",
+  "bugs": {
+    "url": "https://github.com/MatthewZito/stylelint-config/issues"
+  },
+  "homepage": "https://github.com/MatthewZito/stylelint-config#readme",
+  "peerDependencies": {
+    "stylelint": "13.13.1",
+    "stylelint-at-rule-no-children": "0.3.1",
+    "stylelint-config-idiomatic-order": "8.1.0",
+    "stylelint-config-recommended-scss": "4.3.0",
+    "stylelint-config-standard": "22.0.0",
+    "stylelint-declaration-block-no-ignored-properties": "2.4.0",
+    "stylelint-images": "2.0.1",
+    "stylelint-order": "4.1.0",
+    "stylelint-scss": "3.21.0"
+  },
+  "dependencies": {
+    "stylelint": "13.13.1",
+    "stylelint-at-rule-no-children": "0.3.1",
+    "stylelint-config-idiomatic-order": "8.1.0",
+    "stylelint-config-recommended-scss": "4.3.0",
+    "stylelint-config-standard": "22.0.0",
+    "stylelint-declaration-block-no-ignored-properties": "2.4.0",
+    "stylelint-images": "2.0.1",
+    "stylelint-order": "4.1.0",
+    "stylelint-scss": "3.21.0"
+  }
+}
