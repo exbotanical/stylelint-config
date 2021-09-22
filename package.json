@@ -42,5 +42,8 @@
     "stylelint-images": "2.0.1",
     "stylelint-order": "4.1.0",
     "stylelint-scss": "3.21.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
