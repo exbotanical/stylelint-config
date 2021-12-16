@@ -1,6 +1,6 @@
 {
   "name": "@magister_zito/stylelint-config",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "stylelint for developers with actual ocd",
   "keywords": [
     "stylelint",
@@ -13,8 +13,7 @@
   },
   "author": "Matthew Zito (goldmund) <matthewtzito@gmail.com>",
   "files": [
-    "index.js",
-    "stylelint.config.js"
+    "index.js"
   ],
   "main": "index.js",
   "scripts": {
@@ -25,34 +24,27 @@
     "url": "https://github.com/MatthewZito/stylelint-config/issues"
   },
   "homepage": "https://github.com/MatthewZito/stylelint-config#readme",
-  "peerDependencies": {
-    "stylelint": "14.1.0",
-    "stylelint-at-rule-no-children": "0.3.1",
-    "stylelint-config-idiomatic-order": "8.1.0",
-    "stylelint-config-recommended-scss": "5.0.2",
-    "stylelint-config-standard": "24.0.0",
-    "stylelint-declaration-block-no-ignored-properties": "2.5.0",
-    "stylelint-images": "2.0.1",
-    "stylelint-order": "5.0.0",
-    "stylelint-scss": "4.0.1"
-  },
-  "dependencies": {
-    "stylelint": "14.1.0",
-    "stylelint-at-rule-no-children": "0.3.1",
-    "stylelint-config-idiomatic-order": "8.1.0",
-    "stylelint-config-recommended-scss": "5.0.2",
-    "stylelint-config-standard": "24.0.0",
-    "stylelint-declaration-block-no-ignored-properties": "2.5.0",
-    "stylelint-images": "2.0.1",
-    "stylelint-order": "5.0.0",
-    "stylelint-scss": "4.0.1"
-  },
   "publishConfig": {
     "access": "public"
   },
+  "peerDependencies": {
+    "stylelint": "^14.1.0"
+  },
+  "dependencies": {
+    "@stylelint/postcss-css-in-js": "^0.37.2",
+    "postcss-html": "^1.3.0",
+    "stylelint": "^14.1.0",
+    "stylelint-at-rule-no-children": "^0.3.1",
+    "stylelint-config-idiomatic-order": "^8.1.0",
+    "stylelint-config-recommended-scss": "^5.0.2",
+    "stylelint-declaration-block-no-ignored-properties": "^2.5.0",
+    "stylelint-images": "^2.0.1",
+    "stylelint-order": "^5.0.0",
+    "stylelint-scss": "^4.0.1"
+  },
   "devDependencies": {
-    "@magister_zito/eslint-config": "0.4.0",
-    "eslint": "8.4.1",
-    "eslint-config-prettier": "8.3.0"
+    "@magister_zito/eslint-config": "^0.4.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0"
   }
 }
