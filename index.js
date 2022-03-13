@@ -1,38 +1,17 @@
+const { extends: extensions, rules, plugins, ...rest } = require('./base');
+
 module.exports = {
-	extends: [
-		'stylelint-config-idiomatic-order',
-		'stylelint-config-recommended-scss'
-	],
-	ignoreFiles: [
-		'./coverage/**/*',
-		'./dist/**/*',
-		'./node_modules/**/*',
-		'./src/**/__snapshots__/**/*'
-	],
+	...rest,
+	extends: extensions.concat(['stylelint-config-recommended-scss']),
 	overrides: [
 		{
 			customSyntax: 'postcss-html',
 			files: ['**/*.vue']
-		},
-		{
-			customSyntax: '@stylelint/postcss-css-in-js',
-			files: ['**/*.{jsx,tsx}']
 		}
 	],
-	plugins: [
-		'stylelint-order',
-		'stylelint-scss',
-		'stylelint-images',
-		'stylelint-declaration-block-no-ignored-properties'
-	],
-	reportInvalidScopeDisables: true,
-	reportNeedlessDisables: true,
+	plugins: plugins.concat(['stylelint-scss']),
 	rules: {
-		'images/broken': true,
-		'images/prefer-data-uri': 256,
-		'indentation': 'tab',
-		'no-empty-source': null,
-		'plugin/declaration-block-no-ignored-properties': true,
+		...rules,
 		'scss/at-rule-no-unknown': [
 			true,
 			{
