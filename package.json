@@ -1,6 +1,6 @@
 {
   "name": "@magister_zito/stylelint-config",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "stylelint for developers with actual ocd",
   "keywords": [
     "stylelint",
@@ -14,6 +14,7 @@
   "author": "Matthew Zito (goldmund) <matthewtzito@gmail.com>",
   "files": [
     "index.js",
+		"base.js",
     "styled-components.js"
   ],
   "main": "index.js",
