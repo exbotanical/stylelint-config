@@ -9,23 +9,24 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MatthewZito/stylelint-config.git"
+    "url": "git+https://github.com/exbotanical/stylelint-config.git"
   },
-  "author": "Matthew Zito (goldmund) <matthewtzito@gmail.com>",
+  "author": "Matthew Zito <exbotanical@protonmail.com>",
   "files": [
     "index.js",
-		"base.js",
+    "base.js",
     "styled-components.js"
   ],
   "main": "index.js",
   "scripts": {
+		"format": "prettier --write \"**/*.{js,ts}\"",
     "lint": "eslint --ext .js,.json . --fix",
     "release": "npm publish"
   },
   "bugs": {
-    "url": "https://github.com/MatthewZito/stylelint-config/issues"
+    "url": "https://github.com/exbotanical/stylelint-config/issues"
   },
-  "homepage": "https://github.com/MatthewZito/stylelint-config#readme",
+  "homepage": "https://github.com/exbotanical/stylelint-config#readme",
   "publishConfig": {
     "access": "public"
   },
@@ -46,9 +47,11 @@
     "stylelint-scss": "^4.0.1"
   },
   "devDependencies": {
-    "@magister_zito/eslint-config": "^0.4.0",
+    "@magister_zito/eslint-config": "^0.14.1",
+    "@magister_zito/prettier-config": "^0.0.4",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
+    "prettier": "^2.7.1",
     "typescript": "^4.6.2"
   }
 }
